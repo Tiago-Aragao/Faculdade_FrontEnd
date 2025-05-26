@@ -1,0 +1,91 @@
+/* Fundo estilo Matrix com 0 e 1 descendo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: #39ff14;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes matrixRain {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+/* Neon Animation */
+@keyframes efeito_neon {
+    0%, 100% {
+        text-shadow:
+            0 0 5px #39ff14,
+            0 0 10px #39ff14,
+            0 0 20px #39ff14,
+            0 0 40px #0f0,
+            0 0 80px #0f0;
+    }
+
+    50% {
+        text-shadow:
+            0 0 2px #39ff14,
+            0 0 4px #39ff14,
+            0 0 8px #39ff14,
+            0 0 16px #0f0,
+            0 0 32px #0f0;
+    } 
+}
+
+.h1_animacao {
+    animation: efeito_neon 1.5s infinite alternate;
+}
+
+header, .descricao, .formulario {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 2rem auto;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 255, 0, 0.05);
+    border: 1px solid #39ff14;
+    border-radius: 10px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid #39ff14;
+    background-color: black;
+    color: #39ff14;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.7rem;
+    background-color: #39ff14;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f0;
+}
