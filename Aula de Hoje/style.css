@@ -1,0 +1,147 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-fade {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    pointer-events: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: black;
+}
+
+nav {
+    background-color: #0077b6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #00b4d8;
+    color: #fff;
+}
+
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+section {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+.palestrantes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.palestrante {
+    flex: 1 1 200px;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.palestrante img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0096c7;
+}
+
+p, label, input {
+    color: aliceblue;
+}
