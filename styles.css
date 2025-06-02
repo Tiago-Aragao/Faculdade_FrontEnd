@@ -12,9 +12,21 @@ h1 {
 
 .galeria {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: wrap; /*Wrap padrão do felx box, o outro tbm é o wrap reverse e o nowrap*/
+  align-content: center; /* flex-start, flex-end, space-around entre outros */
+  align-items: center;   /* Alinha os itens dentro de cada linha */
+  justify-content: center; /* Flex start, flex end, center, space-between, space-around, space-evenly são tbm formas do flex box de dividir seus cards no conteiner pre definido*/
   gap: 20px;
+  flex-direction: row; /*Direção padrão do Flex Box*/
+  /*
+  align-items:  Alinha os itens no eixo transversal, o padrão é o eixo vertical o stretch é o padrão os outros são flex-start: todas as linhas ficam no início do eixo transversal.
+  flex-end: linhas no final do eixo transversal.
+  center: centraliza todas as linhas.
+  space-between: espaço igual entre as linhas, mas sem espaço nas bordas.
+  space-around: espaço igual ao redor das linhas, incluindo bordas.
+  */
+  height: 500px;
+  padding: 10px;
 }
 
 .card {

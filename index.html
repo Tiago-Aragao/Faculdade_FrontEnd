@@ -1,3 +1,19 @@
+<!--
+Propriedades do Flex Box:
+As propriedades aplicadas ao contêiner controlam o comportamento geral dos itens dentro dele:
+display: flex: Define o contêiner como flexível.
+flex-direction: Define a direção dos itens no contêiner.
+Valores: row (padrão), row-reverse, column, column-reverse.
+flex-wrap: Controla o comportamento dos itens quando não há espaço suficiente.
+Valores: nowrap (padrão), wrap, wrap-reverse.
+justify-content: Alinha os itens ao longo do eixo principal.
+Valores: flex-start, flex-end, center, space-between, space-around, space-evenly.
+align-items: Alinha os itens ao longo do eixo transversal.
+Valores: stretch (padrão), flex-start, flex-end, center, baseline.
+align-content: Alinha as linhas de itens quando há múltiplas linhas.
+Valores: flex-start, flex-end, center, space-between, space-around, stretch.
+-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,6 +24,7 @@
 </head>
 <body>
   <h1>Exemplo de Imagens com Flexbox</h1>
+ 
   <div class="galeria">
     <div class="card"><img src="https://picsum.photos/300/200?random=1" alt=""><p>Imagem 1</p></div>
     <div class="card"><img src="https://picsum.photos/300/200?random=2" alt=""><p>Imagem 2</p></div>
@@ -16,5 +33,6 @@
     <div class="card"><img src="https://picsum.photos/300/200?random=5" alt=""><p>Imagem 5</p></div>
     <div class="card"><img src="https://picsum.photos/300/200?random=6" alt=""><p>Imagem 6</p></div>
   </div>
+
 </body>
 </html>
